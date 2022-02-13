@@ -1,36 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import stylse from './Profile.module.css';
+import s from './Profile.module.css';
 
 
 function Profile({username, tag, location, avatar,stats}){
     return(
         
-<div className={stylse.profile}>
+<div className={s.profile}>
   
-  <div className={stylse.description}>
+  <div className={s.description}>
     <img
       src={avatar}
       alt={username}
-      className={stylse.avatar}
+      className={s.avatar}
     />
-    <p className={stylse.name}>{username}</p>
-    <p className={stylse.tag}>{tag}@{tag}</p>
-    <p className={stylse.location}>{location}</p>
+    <p className={s.name}>{username}</p>
+    <p className={s.tag}>{tag}@{tag}</p>
+    <p className={s.location}>{location}</p>
   </div>
 
-  <ul className={stylse.stats}>
+  <ul className={s.stats}>
     <li>
-      <span className={stylse.label}>Followers</span>
-      <span className={stylse.quantity}>{stats.followers}</span>
+      <span className={s.label}>Followers</span>
+      <span className={s.quantity}>{stats.followers}</span>
     </li>
     <li>
-      <span className={stylse.label}>Views</span>
-      <span className={stylse.quantity}>{stats.views}</span>
+      <span className={s.label}>Views</span>
+      <span className={s.quantity}>{stats.views}</span>
     </li>
     <li>
-      <span className={stylse.label}>Likes</span>
-      <span className={stylse.quantity}>{stats.likes}</span>
+      <span className={s.label}>Likes</span>
+      <span className={s.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
