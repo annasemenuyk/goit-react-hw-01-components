@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { FriendListItem } from "../FriendListItem/FriendListItem";
+import FriendListItem from "../FriendListItem/FriendListItem";
 import s from "./FriendList.module.css";
 
-function Friends ({friends}) {
+function FriendList ({friends}) {
     //Произвольное кол-во FriendListItem
     return (
 <ul className={s.list}>
@@ -18,11 +17,4 @@ function Friends ({friends}) {
         ))}
 </ul>);
 }
-FriendList.propTypes = {
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool,
-    id: PropTypes.number,
-  };
-
 export default FriendList;
