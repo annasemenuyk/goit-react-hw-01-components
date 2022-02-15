@@ -1,0 +1,17 @@
+.history {
+  width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+.head {
+  height: 40px;
+  background-color: #4ebcd5;
+  color: #eafefe;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+td,
+th {
+  border: 1px solid #dcdcdc;
+}

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import TransactionItem from "../TransactionItem/TransactionItem";
 import s from'./TransactionHistory.module.css';
 
-function TransactionHistory ({type, amount,currency}){
+function TransactionHistory ({items}){
     return(
 <table className={s.history}>
-  <thead>
+  <thead className={s.head}>
     <tr>
           <th>Type</th>
           <th>Amount</th>
@@ -31,3 +31,4 @@ amount: PropTypes.string,
 currency: PropTypes.string,
 id: PropTypes.number,
 };
+export default TransactionHistory;
